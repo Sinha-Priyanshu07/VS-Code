@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <!--
+        In <label> tag
+        for = Attribute for Saving the reference of label for id
+        
+        <input> tag
+        => used for creating input fields. 
+        In This tag:
+        id = Attribute for recoginising the label reference
+        type = Attribute for defining the type of input field
+        placeholder = Attribute for showing the hint text in input field
+        required = Attribute for making the input field mandatory
+
+        types of input fields:
+            text = for text input
+            number = for number input
+            email = for email input
+            password = for password input
+            tel = for telephone number input
+            dob = for date of birth input
+            date = for date input
+            time = for time input
+
+            radio = for radio button input
+            checkbox = for checkbox input
+        
+        <button> tag is used for creating buttons
+        In This tag it has type attribute:
+            submit = for submit button
+            reset = for reset button
+
+        <select> tag is used for dropdown menu
+            => It has <option> tag which creates options of dropdown. it has:
+                value = Attribute for defining the value of option
+                disabled = Attribute for disabling the option so user cannot select it
+                selected = Attribute for selecting the option by default
+        
+        <textarea> tag is used for text box so user can enter text in it. Like comments
+            id = Attribute same as input(used for 'for' attribute of label)
+    -->
+
+    <form action="">
+        <!-- Name Input -->
+        <div>
+            <label for="name">Name</label>
+            <input  id="name" type="text" placeholder="Enter your name" required>
+        </div>
+
+        <!-- Roll No. Input -->
+        <div>
+            <label for="roll">Roll No.</label>
+            <input  id="roll" type="number" placeholder="Enter your Roll Number" required>
+        </div>
+
+        <!-- Email Input -->
+        <div>
+            <label for="email">Email</label>
+            <input  id="email" type="email" placeholder="Enter your Email" required>
+        </div>
+
+        <!-- Password Input -->
+        <div>
+            <label for="password">Password</label>
+            <input  id="password" type="password" placeholder="Enter your Password" required>
+        </div>
+         <!-- Course Input = Radio Buttons -->
+        <div>
+            <label for="course">Course</label><br>
+            <input type="radio" id="mca" name="course" value="mca">
+            <label for="bca">BCA</label>
+            <input type="radio" id="bba" name="course" value="bba">
+            <label for="bba">BBA</label>
+            <input type="radio" id="bscit" name="course" value="bscit">
+            <label for="bscit">Bsc IT</label>
+        </div>
+
+
+        <!-- Semester Input = Dropdown -->
+         <div>
+            <label for="semester">Semester</label>
+            <select id="semester" required>
+                <!-- Need this to not select the Option -->
+                <option value="" disabled selected>Select your Semester</option>
+                <option value="s1">Semester 1</option>
+                <option value="s2">Semester 2</option>
+                <option value="s3">Semester 3</option>
+                <option value="s4">Semester 4</option>
+                <option value="s5">Semester 5</option>
+                <option value="s6">Semester 6</option>
+            </select>
+        </div>
+
+        <!-- Checkbox -->
+        <div>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions</label>
+        </div>
+
+        <!-- Textarea -->
+         <div>
+            <label for="remarks">Remarks About DC</label> <br>
+            <textarea id="remarks" placeholder="Enter Your Comments" rows="4"></textarea>
+         </div>
+
+        <!-- Submit Button -->
+         <div>
+            <button type="submit">Submit</button>
+         </div>
+
+
+    </form>
+</body>
+</html>

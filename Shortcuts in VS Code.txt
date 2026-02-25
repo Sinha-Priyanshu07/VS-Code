@@ -1,0 +1,27 @@
+Shortcuts in VS Code
+
+Run Code
+F1
+
+2. To Select NEXT Occurrences of Selected Text
+Ctrl + D
+
+3. To Select All Occurrences of Selected Text
+Ctrl + Shift + L
+
+4. Close opened Tab/Editor
+Ctrl + W
+
+5. Theme Changer
+Ctrl + K Ctrl + T
+
+6. Word Wrap (Shift a line out of screen to next line in screen)
+Alt + Z
+
+7. To change Occurrences Manually
+click on first word
+Press Alt
+click where You want to keep cursor to change 
+
+8. Copy to Other Lines
+Shift + Alt + ArrowUp/ArrowDown

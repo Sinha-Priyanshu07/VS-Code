@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+<body>
+    <h1>Videos in HTML</h1>
+    <!-- 
+        <video> tag
+            Just like image but with more attributes
+        Attributes:
+        src = source of video file
+        controls = for showing video controls like play, pause, volume etc.
+        autoplay = for auto playing the video when page loads
+        muted = for muting the video by default
+        loop = for looping the video
+        width = for defining width of video
+        height = for defining height of video
+        preload = for loading the video first then page loads
+
+        autoplay and muted are often used together because most browsers block autoplaying videos with sound. Example: Chrome
+    -->
+    <video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" controls autoplay unmuted width="300">Video Not Available</video>
+<hr>
+    <!-- Another Method for Writing this -->
+     <video controls width="300" autoplay muted loop>
+        <source  src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+     </video>
+</body>
+</html>
