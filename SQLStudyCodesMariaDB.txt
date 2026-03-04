@@ -1,0 +1,29 @@
+SQL(Maria DB)
+login
+pw:ps007
+
+by cmd => sqlplus
+SQL(Oracle)
+login => Connect System
+pw: ps123
+If password got wrong
+mysql -u root -p
+then login
+
+show databases;
+create database first;	
+use hello;
+select * from hello;
+show tables;
+create table hello(name varchar(20), id int);
+insert into hello values("abc"1,56);
+hi
+in create command use
+decimal (20) instead of number(20)
+decimal (p,s)
+p = precision (total digits)
+s = scale (digits after decimal)
+p = p+s; remember it
+
+If i want to add one more column in the existing table
+ALTER TABLE hello ADD COLUMN Mobile decimal(10);
