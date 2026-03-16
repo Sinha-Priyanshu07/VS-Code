@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+         margin: 0;
+         padding: 0;
+    }
+        /* General table styling */
+table {
+    width: 40%;
+    margin: 200px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Header styling */
+thead th {
+    background-color: #2636c6;
+    color: white;
+    padding: 0px;
+    border: 1px solid #ddd;
+}
+
+/* Body cells */
+tbody td {
+    padding: 0px;
+    border: 1px solid #ddd;
+}
+
+/* Alternating row colors */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Hover effect */
+tbody tr:hover {
+    background-color: #e6ffe6;
+    transition: 0.3s;
+}
+
+/* First column (Day names) */
+tbody td:first-child {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>10-11</th>
+                <th>11-12</th>
+                <th>12-01</th>
+                <th>01-02</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>MON</td>
+                <td></td>
+                <td>AK</td>
+                <td>FK</td>
+                <td>AT</td>
+            </tr>
+            <tr>
+                <td>TUE</td>
+                <td>MK</td>
+                <td>FK</td>
+                <td>AK</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>WED</td>
+                <td>MK</td>
+                <td>AK</td>
+                <td>AT</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>THU</td>
+                <td></td>
+                <td>FK</td>
+                <td>MK</td>
+                <td>AK</td>
+            </tr>
+            <tr>
+                <td>FRI</td>
+                <td></td>
+                <td>AT</td>
+                <td>MK</td>
+                <td>AK</td>
+            </tr>
+            <tr>
+                <td>SAT</td>
+                <td></td>
+                <td>AT</td>
+                <td>MK</td>
+                <td>FK</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
